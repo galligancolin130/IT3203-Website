@@ -1,0 +1,141 @@
+css
+
+/* IT 3203 Project Milestone #1
+   Author: Colin Galligan
+   Shared stylesheet for all six pages */
+
+/* Overall page styling */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #243047;
+    background-color: #f4f7fb;
+}
+
+/* Main header */
+#site-header {
+    background-color: #142b4a;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 2.3rem;
+}
+
+/* Navigation layout using Flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dce4ef;
+}
+
+nav a {
+    color: #174a78;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 13px;
+    border-radius: 6px;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    background-color: #e0f2f1;
+    color: #087f75;
+}
+
+/* Reusable content container */
+.container {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e0e7ef;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* Heading styles */
+h2 {
+    color: #174a78;
+    border-bottom: 2px solid #dce9f5;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #087f75;
+}
+
+/* Lists and links */
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #087f75;
+}
+
+a:hover {
+    color: #142b4a;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dce4ef;
+}
+
+th {
+    background-color: #eaf2fa;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #142b4a;
+    color: white;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #9fe8dc;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+    #site-header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+}
