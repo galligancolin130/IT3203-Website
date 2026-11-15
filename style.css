@@ -1,8 +1,8 @@
 css
 
-/* IT 3203 Project Milestone #1
+/* IT 3203 Project Milestone #2
    Author: Colin Galligan
-   Shared stylesheet for all six pages */
+   Shared stylesheet for all seven pages */
 
 /* Overall page styling */
 body {
@@ -139,3 +139,23 @@ footer a {
         padding: 18px;
     }
 }
+/* Quiz form and result styling */
+nav a[aria-current="page"] { background: #e0f2f1; color: #075e57; }
+.quiz-intro { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center; }
+.timer { font-size: 1.3rem; font-weight: bold; padding: 9px 16px; background: #eaf2fa; border-radius: 8px; }
+.timer.warning { color: #a32b2b; background: #fff0f0; }
+.question { border: 1px solid #dce4ef; border-radius: 10px; padding: 18px; margin: 18px 0; }
+.question legend { font-weight: bold; color: #174a78; padding: 0 7px; }
+.question label { display: block; margin: 8px 0; cursor: pointer; }
+.question input[type="text"] { box-sizing: border-box; max-width: 440px; width: 100%; padding: 11px; border: 1px solid #9baec2; border-radius: 6px; font: inherit; }
+.question input[type="radio"], .question input[type="checkbox"] { margin-right: 9px; accent-color: #087f75; }
+button { background: #174a78; color: white; border: 0; border-radius: 7px; padding: 12px 20px; font: inherit; font-weight: bold; cursor: pointer; margin: 5px 8px 5px 0; }
+button:hover { background: #087f75; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+#reset-button { background: #526477; }
+#results { border: 2px solid #dce4ef; padding: 20px; border-radius: 10px; margin-top: 24px; }
+#results[hidden] { display: none; }
+.correct { color: #176c38; } .incorrect { color: #ae3030; }
+.result-item { border-top: 1px solid #dce4ef; padding: 9px 0; }
+.result-item p { margin: 3px 0; }
+@media(max-width:600px) { .question { padding: 12px; } }

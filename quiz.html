@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="A ten-question cybersecurity self-assessment quiz" name="description"/>
+  <title>
+   Quiz | Understanding Cybersecurity
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header id="site-header">
+   <h1>
+    Cybersecurity Knowledge Quiz
+   </h1>
+   <p>
+    IT 3203 Project Milestone #2
+   </p>
+   <p>
+    Created by Colin Galligan
+   </p>
+  </header>
+  <nav aria-label="Main navigation">
+   <a href="index.html">
+    Home
+   </a>
+   <a href="topic1.html">
+    Cyber Threats
+   </a>
+   <a href="topic2.html">
+    Protection
+   </a>
+   <a href="concepts.html">
+    Key Concepts
+   </a>
+   <a aria-current="page" href="quiz.html">
+    Quiz
+   </a>
+   <a href="references.html">
+    References
+   </a>
+   <a href="about.html">
+    About
+   </a>
+  </nav>
+  <main class="container">
+   <div class="quiz-intro">
+    <div>
+     <h2>
+      Test What You Learned
+     </h2>
+     <p>
+      Answer all 10 questions. Each is worth 10 points. A score of 70 or higher passes. The quiz submits automatically when the 10 minutes run out.
+     </p>
+    </div>
+    <div aria-label="Time remaining" class="timer" id="timer" role="timer">
+     10:00
+    </div>
+   </div>
+   <form id="quiz-form" novalidate="">
+    <fieldset class="question" id="question-1">
+     <legend>
+      1. What does cybersecurity mainly protect?
+     </legend>
+     <label>
+      <input name="q1" type="radio" value="Computers, networks, and information"/>
+      Computers, networks, and information
+     </label>
+     <label>
+      <input name="q1" type="radio" value="Only computer screens"/>
+      Only computer screens
+     </label>
+     <label>
+      <input name="q1" type="radio" value="Only printed documents"/>
+      Only printed documents
+     </label>
+    </fieldset>
+    <fieldset class="question" id="question-2">
+     <legend>
+      2. Which is an example of phishing?
+     </legend>
+     <label>
+      <input name="q2" type="radio" value="A fake email asking for your password"/>
+      A fake email asking for your password
+     </label>
+     <label>
+      <input name="q2" type="radio" value="Installing a trusted update"/>
+      Installing a trusted update
+     </label>
+     <label>
+      <input name="q2" type="radio" value="Making a backup"/>
+      Making a backup
+     </label>
+    </fieldset>
+    <fieldset class="question" id="question-3">
+     <legend>
+      3. What is harmful software called?
+     </legend>
+     <label for="q3">
+      Your answer
+     </label>
+     <input autocomplete="off" id="q3" name="q3" type="text"/>
+    </fieldset>
+    <fieldset class="question" id="question-4">
+     <legend>
+      4. Which password is usually strongest?
+     </legend>
+     <label>
+      <input name="q4" type="radio" value="password123"/>
+      password123
+     </label>
+     <label>
+      <input name="q4" type="radio" value="MyName2005"/>
+      MyName2005
+     </label>
+     <label>
+      <input name="q4" type="radio" value="T7!qP2#vL9"/>
+      T7!qP2#vL9
+     </label>
+    </fieldset>
+    <fieldset class="question" id="question-5">
+     <legend>
+      5. Which actions help protect online accounts? Select all that apply.
+     </legend>
+     <label>
+      <input name="q5" type="checkbox" value="Use multifactor authentication"/>
+      Use multifactor authentication
+     </label>
+     <label>
+      <input name="q5" type="checkbox" value="Reuse one password everywhere"/>
+      Reuse one password everywhere
+     </label>
+     <label>
+      <input name="q5" type="checkbox" value="Use strong, unique passwords"/>
+      Use strong, unique passwords
+     </label>
+     <label>
+      <input name="q5" type="checkbox" value="Share login codes with strangers"/>
+      Share login codes with strangers
+     </label>
+    </fieldset>
+    <fieldset class="question" id="question-6">
+     <legend>
+      6. What is the process of turning readable data into coded data called?
+     </legend>
+     <label for="q6">
+      Your answer
+     </label>
+     <input autocomplete="off" id="q6" name="q6" type="text"/>
+    </fieldset>
+    <fieldset class="question" id="question-7">
+     <legend>
+      7. What is one purpose of a firewall?
+     </legend>
+     <label>
+      <input name="q7" type="radio" value="Filter network traffic"/>
+      Filter network traffic
+     </label>
+     <label>
+      <input name="q7" type="radio" value="Charge a laptop"/>
+      Charge a laptop
+     </label>
+     <label>
+      <input name="q7" type="radio" value="Create phishing emails"/>
+      Create phishing emails
+     </label>
+    </fieldset>
+    <fieldset class="question" id="question-8">
+     <legend>
+      8. Why are software updates important?
+     </legend>
+     <label>
+      <input name="q8" type="radio" value="They can fix security weaknesses"/>
+      They can fix security weaknesses
+     </label>
+     <label>
+      <input name="q8" type="radio" value="They remove the need for passwords"/>
+      They remove the need for passwords
+     </label>
+     <label>
+      <input name="q8" type="radio" value="They make every website safe"/>
+      They make every website safe
+     </label>
+    </fieldset>
+    <fieldset class="question" id="question-9">
+     <legend>
+      9. What is the main reason to back up important files?
+     </legend>
+     <label>
+      <input name="q9" type="radio" value="To recover files if data is lost"/>
+      To recover files if data is lost
+     </label>
+     <label>
+      <input name="q9" type="radio" value="To make passwords shorter"/>
+      To make passwords shorter
+     </label>
+     <label>
+      <input name="q9" type="radio" value="To stop all spam"/>
+      To stop all spam
+     </label>
+    </fieldset>
+    <fieldset class="question" id="question-10">
+     <legend>
+      10. What is checking a user&rsquo;s identity called?
+     </legend>
+     <label for="q10">
+      Your answer
+     </label>
+     <input autocomplete="off" id="q10" name="q10" type="text"/>
+    </fieldset>
+    <button id="submit-button" type="submit">
+     Submit Quiz
+    </button>
+    <button id="reset-button" type="button">
+     Retake Quiz
+    </button>
+   </form>
+   <section aria-live="polite" hidden="" id="results">
+   </section>
+  </main>
+  <footer>
+   <p>
+    Understanding Cybersecurity | IT 3203
+   </p>
+  </footer>
+  <script defer="" src="script.js">
+  </script>
+ </body>
+</html>
